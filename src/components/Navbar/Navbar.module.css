@@ -1,0 +1,57 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .profileContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+  
+  }
+  
+  .profileLink{
+      margin-right: 30px;
+  
+  }
+  
+  .navbarList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbarList li {
+    margin-right: 30px;
+  }
+  
+  .logoAndSeachbarContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+  
+  }
+  
+  .logo {
+      margin-right: 30px;
+  
+  }
+  
+  
+  
+  
+  .searchInput{
+      border: 2px solid #808080;
+      border-radius: 20px;
+  }
+  
+  
+  
