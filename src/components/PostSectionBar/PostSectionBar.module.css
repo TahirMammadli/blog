@@ -1,0 +1,117 @@
+.postSectionBarContainer {
+ 
+  width: 700px;
+  height: 150px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(101, 101, 101, 0.2);
+}
+
+.logoAndSeachbarContainer {
+  display: flex;
+  width: 100%;
+}
+
+.postSectionIconContainer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+  bottom: 10px;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  position: relative;
+  background-color: #1da1f2;
+  border-radius: 10px;
+  color: white;
+  height: 8px;
+  width: 80px;
+  cursor: pointer;
+  padding: 10px 15px; /* Add padding to the container */
+}
+
+.dropdownButton {
+  display: inline-flex;
+  align-items: center; /* Center items vertically */
+  background-color: #1da1f2;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  height: 8px;
+  width: 100px;
+}
+
+/* Add this class for the icon */
+.dropdownButton svg {
+  margin-right: 5px; /* Add some spacing between icon and text */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+.dropdownList {
+  position: absolute;
+  top: 100%; /* Position the list below the container */
+  left: 0;
+  background-color: #1da1f2;
+  height: auto;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  list-style: none;
+  border-radius: 10px;
+  margin: 0; /* Remove default margin from ul */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Remove default margin */
+  max-height: 200px; /* Set a maximum height for the list */
+  overflow-y: auto;
+}
+
+.dropdownList li:hover {
+  background-color: white;
+  color: #1da1f2;
+  border-radius: 10px;
+}
+
+.visibilityIconContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.searchBar {
+  width: 85%;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  padding: 5px;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex: 1;
+  background-color: black;
+}
+
+.searchBar svg {
+  margin-left: 5px;
+  cursor: pointer;
+}

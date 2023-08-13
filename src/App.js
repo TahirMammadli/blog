@@ -2,8 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar.js";
+import ActivityBar from "./components/ActivityBar/ActivityBar";
 import classes from "./App.module.css";
 import MyprofileBar from "./components/Myprofile Bar/MyprofileBar";
+import PostSectionBar from "./components/PostSectionBar/PostSectionBar";
 function App() {
   useEffect(() => {
     fetchData();
@@ -22,7 +24,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <MyprofileBar />
+      <div className={classes.flexContainer}>
+        <MyprofileBar />
+        <PostSectionBar />
+        <ActivityBar />
+      </div>
     </>
   );
 }

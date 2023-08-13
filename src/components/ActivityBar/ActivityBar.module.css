@@ -1,0 +1,19 @@
+.activityBarContainer {
+  position: relative;
+  border: 1px transparent solid;
+  height: 400px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px rgba(101, 101, 101, 0.2);
+
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.activityText{
+    font-size: 20px;
+}
