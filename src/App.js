@@ -6,6 +6,10 @@ import ActivityBar from "./components/ActivityBar/ActivityBar";
 import classes from "./App.module.css";
 import MyprofileBar from "./components/Myprofile Bar/MyprofileBar";
 import PostSectionBar from "./components/PostSectionBar/PostSectionBar";
+import SortByDropdown from "./components/SortByDropdown/SortByDropdown";
+import FeedBar from "./components/FeedBar/FeedBar";
+import SuggestedForYouBar from "./components/SuggestedForYouBar/SuggestedForYouBar";
+import YourShortcutsBar from "./components/YourShortcutsBar/YourShortcutsBar";
 function App() {
   useEffect(() => {
     fetchData();
@@ -25,9 +29,19 @@ function App() {
     <>
       <Navbar />
       <div className={classes.flexContainer}>
-        <MyprofileBar />
-        <PostSectionBar />
-        <ActivityBar />
+        <div>
+          <MyprofileBar />
+          <YourShortcutsBar />
+        </div>
+        <div>
+          <PostSectionBar />
+          <SortByDropdown />
+          <FeedBar />
+        </div>
+        <div>
+          <ActivityBar />
+          <SuggestedForYouBar />
+        </div>
       </div>
     </>
   );

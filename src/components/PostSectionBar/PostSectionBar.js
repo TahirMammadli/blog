@@ -1,5 +1,5 @@
 import classes from "./PostSectionBar.module.css";
-import catLogo from "../Navbar/Wojak_cropped.jpg";
+import doomer from "../Myprofile Bar/doomer.jpg";
 import ImageIcon from "@mui/icons-material/Image";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import PollIcon from "@mui/icons-material/Poll";
@@ -24,10 +24,11 @@ export default function PostSectionBar() {
     <div className={classes.postSectionBarContainer}>
       <div className={classes.logoAndSeachbarContainer}>
         <img
-          src={catLogo}
+          src={doomer}
           alt="myImage"
           className={classes.logo}
-          style={{ width: "50px", height: "50px", borderRadius: "100px" }}
+          style={{ width: "70px",
+          height: "60px", borderRadius: "100px" }}
         />
         {/* this div below will be a separate component  */}
         <div className={classes.searchBar}>
