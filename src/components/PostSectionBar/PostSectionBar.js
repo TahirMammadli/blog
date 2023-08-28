@@ -34,7 +34,7 @@ export default function PostSectionBar() {
         <div className={classes.searchBar}>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Insert your post..."
             className={classes.searchInput}
           />
           <EmojiEmotionsIcon/>

@@ -5,7 +5,9 @@ import ExploreIcon from '@mui/icons-material/Explore';
 import MessageIcon from '@mui/icons-material/Message';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import PeopleIcon from '@mui/icons-material/People';
-export default function Navbar() {
+export default function Navbar(props) {
+  const onChatToggle = props.onChatToggle
+  
     return(
   <div className={classes.navbarContainer}>
     <div className={classes.logoContainer}>
@@ -28,7 +30,7 @@ export default function Navbar() {
       <ul className={classes.navbarList}>
         <li><HomeIcon style={{ color: '#1da1f2' }} size={43}/></li>
         <li><ExploreIcon/></li>
-        <li><MessageIcon/></li>
+        <li><button onClick={onChatToggle}><MessageIcon/></button></li>
         <li><NotificationsIcon/></li>
         <li><PeopleIcon/></li>
       </ul>

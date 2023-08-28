@@ -10,7 +10,15 @@ import SortByDropdown from "./components/SortByDropdown/SortByDropdown";
 import FeedBar from "./components/FeedBar/FeedBar";
 import SuggestedForYouBar from "./components/SuggestedForYouBar/SuggestedForYouBar";
 import YourShortcutsBar from "./components/YourShortcutsBar/YourShortcutsBar";
+import ChatBar from "./components/Chat/ChatBar";
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleChatBar = () => {
+    setIsOpen(!isOpen)
+    console.log('PRESSED')
+  }
   useEffect(() => {
     fetchData();
   }, []);
@@ -27,7 +35,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+
+     {isOpen &&  <ChatBar/>}
+      <Navbar onChatToggle={toggleChatBar}/>
       <div className={classes.flexContainer}>
         <div>
           <MyprofileBar />
